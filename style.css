@@ -1,0 +1,149 @@
+body {
+  position: relative;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: lightyellow;
+}
+nav{
+  width: 100%;
+  background: linear-gradient(rgb(4, 193, 250) ,rgb(4, 245, 165),); 
+  display: flex;
+  align-items: center;
+}
+nav h1{
+  font-size: 30px;
+  position: absolute;
+  top: 2;
+  left: 45%;
+  text-align: center;
+}
+.travel-form {
+  width: 550px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color:rgba(0, 174, 255, 0.212) ;
+  box-shadow: 10px 14px 10px lightblue;
+}
+.travel-form h2 {
+  text-align: center;
+}
+.travel-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.travel-form input, 
+.travel-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.travel-form input:focus, 
+.travel-form textarea:focus{
+  box-shadow: 3px 2px 1px 3px rgb(129, 240, 109);
+  border: 1px solid  rgb(129, 240, 109);
+}
+.travel-form input[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.travel-form input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(24, 22, 22);
+  padding: 20px;
+}
+
+footer .single h2 {
+  font-size: 40px;
+  color: yellow;
+}
+
+footer .single p, footer .single a {
+  margin: 8px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.single a:hover {
+  color: blue;
+}
+@media screen and (max-width: 1200px) {
+  #navbarScroll {
+    padding-left: 300px;
+  }
+
+  .card {
+    width: 48%;
+    margin: 10px;
+  }
+
+  footer .single h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbarScroll {
+    padding-left: 100px;
+  }
+
+  #carousel {
+    height: 300px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 5px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .single h2 {
+    font-size: 19px;
+  }
+
+  footer .single p, footer .single a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #navbarScroll {
+    padding-left: 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer .single h2 {
+    font-size: 15px;
+  }
+
+  footer .single p, footer .single a {
+    font-size: 10px;
+  }
+}  

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maasi Travels</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+.container-fluid {
+  background: linear-gradient(rgb(0, 195, 255) ,rgb(0, 255, 170) ,);
+}
+#navbarScroll {
+  padding-left: 570px;
+}
+
+#navbarScroll a {
+  color: black;
+  margin-left: 10px;
+  transition: all 0.5s ease-in-out;
+  justify-content: space-between;
+}
+
+#navbarScroll a:hover {
+  background-color: rgb(63, 30, 245);
+  color: #fff;
+  border-radius: 10px;
+  transform: scale(1.1);
+}
+#carousel {
+  width: 100%;
+  height: 500px;
+}
+.card {
+  width: 18rem;
+  padding: 10px;
+  margin: 20px;
+  display: inline-block;
+  box-shadow: 15px 15px 10px lightsteelblue;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  border-color: #3498db;
+  transform: scale(1.1);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(24, 22, 22);
+  padding: 20px;
+}
+
+footer .single h2 {
+  font-size: 40px;
+  color: yellow;
+}
+
+footer .single p, footer .single a {
+  margin: 8px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.single a:hover {
+  color: blue;
+}
+@media screen and (max-width: 1200px) {
+  #navbarScroll {
+    padding-left: 300px;
+  }
+
+  .card {
+    width: 48%;
+    margin: 10px;
+  }
+
+  footer .single h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbarScroll {
+    padding-left: 100px;
+  }
+
+  #carousel {
+    height: 300px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 5px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .single h2 {
+    font-size: 19px;
+  }
+
+  footer .single p, footer .single a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #navbarScroll {
+    padding-left: 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer .single h2 {
+    font-size: 15px;
+  }
+
+  footer .single p, footer .single a {
+    font-size: 10px;
+  }
+}
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://maasitravels.com" ><img src="logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item" >
+            <a class="nav-link active" aria-current="page" href="index.html" style="margin: 5px; padding: 5px; font-size: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="margin: 5px; padding: 5px; font-size: 20px;">About </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin: 5px; padding: 5px; font-size: 20px;">
+              Car Rental
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#car">Sedan</a></li>
+              <li><a class="dropdown-item" href="#car">Muv</a></li>
+              <li><a class="dropdown-item" href="#car">Crysta</a></li>
+              <li><a class="dropdown-item" href="#car">Tempo</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"></li>
+            <a class="nav-link" href="contact.html" style="margin: 5px; padding: 5px; font-size: 20px;">Contact </a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="istockphoto-491656610-612x612.webp" class="d-block w-100" alt="..." style="height: 400px;  width: 400px;">
+          </div>
+          <div class="carousel-item">
+            <img src="shifaaz-shamoon-qtbV_8P_Ksk-unsplash.jpg" class="d-block w-100" alt="..." style="height: 400px;  width: 400px;">
+          </div>
+          <div class="carousel-item">
+            <img src="georgy-trofimov-APa3PiibdFo-unsplash.jpg" class="d-block w-100" alt="..." style="height: 400px ; width: 400px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="example-container" style="margin: 8px; padding: 20px;" id="adout">
+        <div class="example-row">
+          <div class="example-content-main" style="float: left; width: 80%; " >
+            <h1 style="text-align: center; font-size: 50px; font-family:  sans-serif; font-weight: 300;">We Design South India Tour Plans</h1>
+        <p style="font-size: 35; font-weight: bold;">Maasi Travels provides a complete solutions for tourist who wishes to visit southern part of India. We take care of complete requirements of the tourist like Flight Ticket Booking | Hotel arrangements | Car Rental | Money Exchange | Tour Packages. All types of Tour Packages are available which can be customized according to the tourist requirements. <br>
+        <br>South India really has a distinct culture that sets it apart from the rest of the country. Not only that, each state has managed to retain its own distinct identity. Intricate temple architecture, historical ruins, palm fringed canals, spirituality and beach will provide you with a varied and interesting trip. <br>
+     
+      <br>South ndia has also been home to the oldest of civilizations, and has seen the rule of various ancient dynasties like the Chera, Chola and Pandya which ruled the region between 300 BC – 300 AD. The state of southern India is thus rich in both the aspects of Cultural and Natural making it a tourist haven. <br>
+      <br>Southern parts of India is the most frequented tourist spot in India. With its abundance in natural and man-made wonders the city has more than 4000 years of cultural history.</p>
+          </div>
+      </div>
+      </div> 
+        <div class="card" style="width: 18rem;" id="car">
+          <img src="sedan.jpg" class="card-img-top" alt="car">
+          <div class="card-body">
+            <h5 class="card-title">Sedan</h5>
+            <p class="card-text"></p>
+            <a href="from.html" class="btn btn-primary" id="book">Booking Car</a>
+          </div>
+        </div>  
+        <div class="card" style="width: 18rem;" id="car">
+          <img src="muv.jpg" class="card-img-top" alt="car">
+          <div class="card-body">
+            <h5 class="card-title">Muv</h5>
+            <p class="card-text"></p>
+            <a href="from.html" class="btn btn-primary" id="book">Booking Car</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;" id="car">
+          <img src="crysta.jpeg" class="card-img-top" alt="car">
+          <div class="card-body">
+            <h5 class="card-title">Crysta</h5>
+            <p class="card-text"></p>
+            <a href="from.html" class="btn btn-primary" id="book">Booking Car</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;" id="car">
+          <img src="tempo.jpg" class="card-img-top" alt="car">
+          <div class="card-body">
+            <h5 class="card-title">Tempo</h5>
+            <p class="card-text"></p>
+            <a href="from.html" class="btn btn-primary" id="book">Booking Car</a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <footer>
+          <div class="single">
+            <img src="logo.png" alt="logo">
+            <p style="color: #fff;"> 98438 35410</p>
+            <p style="color: #fff;"> 88830 35410</p>
+          </div>
+          <div class="single">
+            <h2 >Page</h2>
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>News and Blog</p>
+            <p>Meet a team</p>
+          </div>
+          <div class="single">
+            <h2>Our Serivces</h2>
+            <p>Hotel Booking</p>
+            <p>Flight Booking</p>
+            <p>Tour Booking</p>
+            <p>Car Booking</p>
+            <p>Money Exchange</p>
+          </div>
+          <div class="single"  >
+            <h2 >Our Tours</h2>
+            <a href="">Temple Tours</a><br>
+            <a href="">Hills Tours</a><br>
+            <a href="">Navagraha Tours</a><br>
+            <a href="">Arupadi Murugan Tours</a><br>
+            <a href="">Honeymoon Tours</a><br>
+            <a href="https://www.facebook.com/maasitravels.southindiatourism?mibextid=ZbWKwL"><i class="bi bi-facebook" id="icon"></i></a>
+            <a href="https://www.instagram.com/maasi_travels?igsh=NWd2dmU0azkyYW01"><i class="bi bi-instagram" id="icon"></i></a>
+            <a href="#"><i class="bi bi-twitter" id="icon"></i></a>
+            <a href=" https://wa.me/9843835410"><i class="bi bi-whatsapp" id="icon"></i></a>
+        </footer>
+</body>
+</html>
